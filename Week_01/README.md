@@ -20,6 +20,7 @@
 栈和队列都可以用container的库
 from collections import deque
 deque1 = deque('abc') # 创建deque(['a', 'b', 'c'])
+del deque1[2] #删除c
 deque1.append('r') # 尾插入
 deque1.appendleft(1) # 头插入
 deque1.pop() # 尾弹出
@@ -27,7 +28,7 @@ deque1.popleft()) # 头弹出
 其他常用的函数:
 deque1.index('c') # 查c的位置
 deque1.insert(3,'g') # 三号下标里插入g
-注： list除没有popleft, appendleft外，上述函数append, pop, index, insert均有
+注： list除没有popleft, appendleft外，上述函数append, pop, index, insert, del均有
 优先队列，我用heapq写在了heapq.py
 
 
