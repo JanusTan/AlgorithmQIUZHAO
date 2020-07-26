@@ -26,10 +26,11 @@ deque1.appendleft(1) # 头插入
 deque1.pop() # 尾弹出
 deque1.popleft()) # 头弹出
 其他常用的函数:
-deque1.index('c') # 查c的位置
+deque1.index('c') # 查c的位置(index函数常用)
 deque1.insert(3,'g') # 三号下标里插入g
 注： list除没有popleft, appendleft外，上述函数append, pop, index, insert, del均有
 优先队列，我用heapq写在了heapq.py
+注意a[0:3], 只能取到a[0], a[1], a[2], 同理range(0,3), 也只能取到0,1,2
 
 
 3. hashmap: 
@@ -37,6 +38,7 @@ dic = {} # 创建一个字典dic{'key1': 'value1', 'key2': 'value2'}
 dic[key1] += 1 # key1对应的value1加一操作
 dic[key2] = 1 # 给key2对应的value2赋值value1
 dic.values() # 字典里所有的values
+dic.items() # 得到一个二维set,第一维是key，第二维是valus
 if key3 in dic: # 查找key3在不在这个字典里
 if value1 in dic.values(): # 查找value1在不在这个字典里
 

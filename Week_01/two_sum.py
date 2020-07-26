@@ -27,20 +27,20 @@
 
 # 方法二：hash, 时间复杂度O（n）,空间复杂度O（n）
 
-def twoSum(nums, target):
-    hashset = {}
-    for i in range(len(nums)):
-        if hashset.get(target - nums[i]) is not None:
-            return [hashset.get(target - nums[i]), i]
-        hashset[nums[i]] = i
-
-
 # def twoSum(nums, target):
-#     dic={}
-#     for k,v in enumerate(nums):
-#         if target-v in dic: #写之前判断，避免了重复元素的覆盖
-#             return [dic[target-v],k]
-#         dic[v]=k
+#     hashset = {}
+#     for i in range(len(nums)):
+#         if hashset.get(target - nums[i]) is not None:
+#             return [hashset.get(target - nums[i]), i]
+#         hashset[nums[i]] = i
+
+
+def twoSum(nums, target):
+    dic = {}
+    for k, v in enumerate(nums):  # key存位置，v存值
+        if target - v in dic:  # 写之前判断，避免了重复元素的覆盖
+            return [dic[target - v], k]
+        dic[v] = k
 
 
 # nums, target = [2, 7, 11, 15], 9
