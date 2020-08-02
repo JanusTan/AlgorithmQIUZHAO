@@ -43,6 +43,16 @@ if value1 in dic.values(): # 查找value1在不在这个字典里
 
 
 4. sorted(array) # 从小到大排序 sorted(a,reverse=True)是从大到小，sorted('dcab')会得到['a', 'b', 'c', 'd'], 时间复杂度O（nlogn）  
+  
+5. 集合  
+set1 = set() # 集合里的元素不重复  注意，set('abc') = {'a', 'b', 'c'}
+set1.add('apple')  # 添加  
+set1.remove('apple')    # 删除  
+set1 = list(set1) # 转化为list1
+set1 = set(set1) #转换为set,会去重复
+set集合、dic字典的查询是O(1), 而list是O(n)
+注意二维list(不含‘()’，只是‘[]’)不能通过set(two_d_list1)转换成集合，但可以通过set(map(tuple,two_d_list1))转换
+
 
 ## 一些题的固定解法总结：  
 括号类： 栈(题号：valid-parentheses)、hashmap(题号：valid-parentheses)  
@@ -76,11 +86,12 @@ dic.values() # 字典里所有的values
 dic.items() # 得到一个二维set,第一维是key，第二维是valus
 if key3 in dic: # 查找key3在不在这个字典里
 if value1 in dic.values(): # 查找value1在不在这个字典里
+dic.items()  # ([(key1, value1), (key2, value2)])
 
 
 
 4. sorted(array) # 从小到大排序 sorted(a,reverse=True)是从大到小，sorted('dcab')会得到['a', 'b', 'c', 'd'], 时间复杂度O（nlogn）
-
+    list1.sort()函数也可以从小到大排序
 ##一些题的固定解法总结：
 括号类： 栈               
                
