@@ -23,7 +23,7 @@
  
  ## python编程  
  from collections import Counter  
- collections.Counter(aryy)函数, 返回一个key为arry元素不重复字典，values为重复的次数  
+ dic = Counter(aryy)函数, 返回一个key为arry元素不重复字典，values为重复的次数 # 生成的字典按出现的次序自动排列  
  k = lambda x:x+1, 这是个匿名函数的写法k是函数名，x是输入，x+1是函数的返回值, k(4)将得到5  
 sorted(a, key=lambda x:x[0], reverse=True) a是一个set,set的元素是二维，则按照元素第一列从大到小排序  
 map(lambda x: x +1, arry), map会根据第一个参数指定的函数，对第二参数作为输入做映射   

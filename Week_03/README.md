@@ -23,7 +23,7 @@
   
 ### 一些tricks
 复习了字典和set的一些用法在week1的readme
-负数取余：-1%4 = 3,即4*（-）+（+x）=-1    
+负数取余：-1%4 = 3,即4*（1）+（3）=-1    
 set集合、dic字典的查询是O(1), 而list是O(n). for set1 in set语句查询  
 tuple元组：tup1 = (50,)元组中只包含一个元素时，需要在元素后面添加逗号。元组的元素不能修改!但可访问tup1[0] = 50   
 注意二维list(不含‘()’，只是‘[]’)不能通过set(two_d_list1)转换成集合，但可以通过set(map(tuple,two_d_list1))转换,转换后可add,remove    

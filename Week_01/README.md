@@ -73,9 +73,9 @@ deque1.popleft()) # 头弹出
 其他常用的函数:
 deque1.index('c') # 查c的位置(index函数常用)
 deque1.insert(3,'g') # 三号下标里插入g
-注： list除没有popleft, appendleft外，上述函数append, pop, index, insert, del均有
-优先队列，我用heapq写在了heapq.py
-注意a[0:3], 只能取到a[0], a[1], a[2], 同理range(0,3), 也只能取到0,1,2
+注： list除没有popleft, appendleft外，上述函数append, pop, index, insert, del均有,注意list可以用list1.pop(0)完成队列的popleft  
+优先队列，我用heapq写在了heapq.py  
+注意a[0:3], 只能取到a[0], a[1], a[2], 同理range(0,3), 也只能取到0,1,2  
 
 
 3. hashmap: 
