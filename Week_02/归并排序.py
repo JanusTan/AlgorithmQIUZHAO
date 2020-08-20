@@ -1,5 +1,3 @@
-import random
-
 
 #  归并排序
 def twoSort(ls1, ls2):
@@ -25,12 +23,5 @@ def mergeSort(ls):
     return twoSort(mergeSort(ls[: new_len]), mergeSort(ls[new_len:]))
 
 
-if __name__ == "__main__":
-    ls = []
-    for i in range(10):
-        ls.append(random.randint(1, 10))
-
-    result = mergeSort(ls)
-    print(ls)
-    for r in result:
-        print(r)
+a = [2, 1, 3, 4, 2, 5, 3, 9]
+print(mergeSort(a))

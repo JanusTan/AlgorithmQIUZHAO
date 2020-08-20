@@ -9,12 +9,12 @@ def quicksort(list1, left, right):
 
     # 当前层逻辑
     while left < right:
-        while left < right and list1[right] <= base:
-            right = right - 1
-        list1[left] = list1[right]
-        while left < right and list1[left] > base:
+        while left < right and list1[left] < base:
             left = left + 1
         list1[right] = list1[left]
+        while left < right and list1[right] >= base:
+            right = right - 1
+        list1[left] = list1[right]
     # 结束本次基准的循环后，即left = right
     list1[left] = base
     # 向下递归，基准左边的的子序列递归；基准右边的子序列递归
